@@ -1,0 +1,967 @@
+<html>
+
+<head>
+  <!-- Basic -->
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <!-- Mobile Metas -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <!-- Site Metas -->
+
+     <link rel = "shortcut icon" type="image/jpg" href="images/log.png">
+  <meta name="keywords" content="" />
+  <meta name="description" content="" />
+  <meta name="author" content="" />
+    <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="stress.css">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:400,600,700&display=swap" rel="stylesheet" />
+<!--Font awesome css-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!---magnific popup--->
+    <link rel="stylesheet" href="magnific-popup.css">
+     <!----animate css--->
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+     <link rel="stylesheet" href="aos.css"/>
+    <!---owl carousel slider-->
+    <link rel="stylesheet" href="owl.carousel.css">
+    <link rel="stylesheet" href="owl.theme.default.css">
+  <title>Cat Cafe</title>
+    </head>
+      <style>
+      :root{
+    --whitesmoke:#f0f0f0;
+    --night-rider:#343434;
+    --black:#191b17;
+    --transition: all 0.5s ease-in-out
+}
+
+@import url("../fonts/octin_sports_rg.ttf");
+        *{
+            font-family: 'poppins', sans-serif;
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+html{
+    color:var(--black);
+    font-size: 1rem;
+    font-weight: 300;
+    line-height: 1.5;
+    text-rendering: optimizeLegibility;
+    scroll-behavior: smooth;
+}
+           article, aside, figcaption, figure, footer, header, hgroup, main, nav, section{
+            overflow: hidden;
+        }
+/* reasonabel styling---*/
+img{
+    width:100%;
+}
+
+a{
+    text-decoration: none !important;
+    color:black;
+}
+li{
+    list-style: none;
+}
+button{
+    cursor: pointer;
+    background-color: transparent;
+    outline:0;
+}
+.container{
+    max-width: 1320px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+              h2{
+            font-weight: 900;
+            padding: 1rem 0;
+            font-size: 40px;;
+            line-height: 1.2;
+            text-transform: capitalize;
+            color: #003366;
+        }
+          .logo{
+              width:70px;
+          }
+
+.text{
+    margin: 0.6rem 0;
+    opacity: 0.8;
+}
+.center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+          } .boron{
+              display: inline-block;
+              letter-spacing: 1px;
+              
+          }
+     .main-btn{
+            position: relative;
+            z-index: 2;
+           padding: 10px 50px;
+            background-color: transparent;
+            border-radius: 0.25rem;
+            border: 0.063rem pink;
+             border: 1px solid palevioletred;
+            color: #fff;
+            font-weight: 500;
+            -webkit-transition: all .4s ease-out 0s;
+            -o-transition:all .4s ease-out 0s;
+            -moz-transition: all .4s ease-out 0s;
+         
+        }
+        .main-btn:hover{
+         background: goldenrod;;
+            color:#ffffff;
+            border:none;
+        }
+          .main-bon{
+            position: relative;
+            z-index: 2;
+              background: palevioletred;
+           padding: 10px 50px;
+            border-color: 1ps solid palevioletred;
+            border-radius: 0.25rem;
+            color: #003366;
+            font-weight: 500;
+            -webkit-transition: all .4s ease-out 0s;
+            -o-transition:all .4s ease-out 0s;
+            -moz-transition: all .4s ease-out 0s;
+        }
+          .main-bon:hover{
+             background: transparent;
+            color:#ffffff;
+              border-radius: 0.25rem;
+            border: 0.063rem pink;
+             border: 1px solid palevioletred;
+          }
+    
+    .title{
+        padding: 0.6rem 0;
+        text-align: center;
+    }
+    .title h2{
+        font-size: 2.2rem;
+        color: var(--night-rider);
+    }
+    .title .text{
+        font-weight: 500;
+        font-size: 1.1rem;
+    }
+          .jiz{
+              font-family: Curlz MT, cursive;
+              color: darkgoldenrod !important;
+          }
+          .huh{
+              font-family: Matura MT Script Capitals, cursive;
+              color:palevioletred !important;
+          }
+    /*----header---*/
+    header{
+         background-image: linear-gradient(#00010cb3,rgba(224, 10, 153, 0.336)),url(images/wid.jpg);
+       width:100%;
+            height:100vh;
+            background-size: cover;
+        color:#fff;
+        display: flex;
+        flex-direction: column;
+        justify-content: stretch;
+    }
+    .navbar{
+        position: fixed;
+        left:0;
+        top:0;
+        width:100%;
+        background: #fff;
+        z-index: 999;
+    }
+    .navbar-brand{
+        font-weight: 500;
+        color:var(--night-rider);
+    }
+    .navbar-brand span {
+        font-weight: 800;
+    }
+    .navbar-toggler{
+        border: none;
+        color:palevioletred;
+    }
+    .hero-div{
+        flex:1;
+        flex-direction: column;
+        text-align: center;
+    }
+    .navbar-nav{
+        margin: 0.2rem 0 0.6rem 0;
+    }
+    .nav-item{
+        padding: 0.6rem;
+    }
+    .nav-link{
+      font-size: 13px;
+            margin: 15px;
+            color: #a6a6a6 !important;
+            font-weight: 600;
+    }
+        
+    .nav-link:hover{
+        color:#cca300 !important;
+    }
+    .navbar-collapse{
+        display: none;
+    }
+    .brand-and-toggler{
+        font-size: 1.65rem;
+        padding: 0.8rem 0;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+   
+     .banner-text{
+            position: relative;
+            text-align: center;
+            color:#fff;
+          margin-top: 15%;
+        font-family: 'Righteous';
+           
+        }
+        .banner-text h1{
+            font-size: 50px;
+            letter-spacing: 1px;
+            font-weight: 900;
+            margin-bottom: 20px;
+            text-transform: uppercase;
+            color:#cca300;
+        }
+        .banner-text h1 span{
+            color:whitesmoke;
+        }
+          .stext{
+           padding-top: 5px; 
+          padding-bottom: 45px;
+              
+          }
+        
+
+    @media screen and (min-width:768px){
+        .detail .row{
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap:2rem;
+        }
+        .detail
+    }
+    @media screen and (min-width:992px)
+    {
+        .navbar{
+            background: transparent;
+            margin-top: 1.4rem;
+        }
+        .navbar .container{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .navbar-brand{
+            color:whitesmoke;
+            font-size: 2rem;
+        }
+        .navbar-toggler{
+            display: none;
+        }
+        .navbar-collapse{
+            display: block !important;
+        }
+        .navbar-nav{
+            display: flex;
+            margin:0;
+        }
+        .nav-item{
+            margin-left: 1.4rem;
+        }
+        .nav-link{
+            color:whitesmoke;
+        }
+        .banner-text h1{
+            font-size:45px;
+        }
+        .btn-trans{
+            display: inline-block;
+            margin-right: 0.8rem;
+        }
+       
+        
+        /*---navbar change--*/
+        .cng-navbar{
+            -webkit-box-shadow: 0 2px 5px 0 rgba(207, 207,205,0.3);
+            -moz-box-shadow: 0 2px 5px 0 rgba(207, 207,205,0.3);
+            -box-shadow:  0 2px 5px 0 rgba(207, 207,205,0.3);
+            margin-top: 0;
+            background: #fff;
+        }
+        .cng-navbar .navbar-brand{
+            color:black;
+        }
+        .cng-navbar .nav-link{
+            color:black;
+        }
+        .feature .row{
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            align-items: center;
+            column-gap: 2rem;
+        }
+        .feature-right{
+            margin-top: 0;
+        }
+    }
+
+                    
+          @media(max-width: 700px){
+                .banner-text h1{
+                 font-size: 20px;
+                margin-top: 40%;
+             }
+             .banner-text p{
+                 font-size: 15px;
+             }
+              .banner-text .main-bon{
+                  font-size: 10px;
+                  padding: 5px 20px;
+
+              }
+              .banner-text .main-btn{
+                  font-size: 10px;
+                  padding: 5px 20px;
+              }
+                }
+        
+         
+          
+           
+         /*
+        =================
+        about section design
+        ===================
+        */
+        
+        .wrapper{
+            padding: 5rem 0;
+        }
+        
+        .about .about-img::before{
+            position: absolute;
+            content: '';
+            top:0;
+            left:0;
+            width:1.5rem;
+            height:27.5rem;
+            background-color: palevioletred;
+
+        }
+        
+        .about .about-img{
+            position: relative;
+            width:100%;
+            height:auto;
+            padding-left: 4rem;
+            
+        }
+        .about .right-wrapper{
+            padding-left: 4rem;
+        }
+        .about .right-wrapper h5{
+            color: palevioletred;
+        }
+        .about .right-wrapper p{
+            color:#001a4d;
+               font-size: 15px;
+        }
+   
+          .mainbtt{
+            position: relative;
+            z-index: 2;
+           padding: 10px 50px;
+            background-color: transparent;
+            border-radius: 0.25rem;
+            border: 0.063rem pink;
+             border: 1px solid palevioletred;
+            color: blue;
+            font-weight: 500;
+            -webkit-transition: all .4s ease-out 0s;
+            -o-transition:all .4s ease-out 0s;
+            -moz-transition: all .4s ease-out 0s;
+         
+        }
+        .mainbtt:hover{
+         background: goldenrod;;
+            color:palevioletred;
+            border:none;
+        }
+          
+       
+          /*----our proj sec--*/
+        
+        .projects_section{
+            margin: 100px 0px;
+            
+        }
+        .projects_section .heading{
+            font-weight: 800;
+            font-size: 50px;
+            
+        }
+        .projects_section .heading span{
+            color:deeppink;
+        }
+        .projects_section .txt{
+            font-size: 14px;
+            color:#1f1f1fbb;
+        }
+        .projects_section .card-body{
+            position: absolute;
+            bottom: 0;
+            background: linear-gradient(deeppink,goldenrod);
+            line-height: 50%;
+            display: none;
+           
+        }
+        .projects_section .card:hover{
+            animation: pulse;
+            animation-duration: 0.5s;
+        }
+        .projects_section .card:hover .card-body{
+            display: block;
+            animation: flipInX;
+            animation-duration: 0.5s;
+            
+        }
+        .projects_section .card-body .card-title{
+           font-weight: 500;
+            font-size: 17px;
+        }
+        .projects_section .card-body .card-txt{
+            color:#2d2d2d;
+            font-size: 13px;
+        }
+        .projects_section .card-body hr{
+            margin: 10px 0px;
+            height: 0.1px;
+            background: black;
+            width:24%;
+        }
+           
+         /*
+        =================
+        Approach sec
+        ==================
+        */
+        
+        .approach{
+            background-color: #eeebe4;  
+        }
+        .approach-cards{
+            padding-top: 3.125rem;     
+        }
+        .approach-cards .card{
+            display: inline-block;
+            position: relative;
+            width:100%;
+            margin: 1.875rem 0;
+            border-radius: 0.375rem;
+            background: #ffffff;
+            border: none;
+            box-shadow: -0.2349rem 1.6711rem 2.6875rem 0 rgb(42 57 63 / 15%); 
+           transition: all 0.03s ease-in-out;
+        }
+        .approach-cards .card:hover{
+            -webkit-transform:translateY(-1.25rem);
+            transform: translateY(-1.25rem);
+            -ms-box-shadow: 0rem 0rem 2.4375rem 0.125 rgb(236, 236, 236, 1);
+            -o-box-shadow: 0rem 0rem 2.4375rem 0.125 rgb(236, 236, 236, 1);
+        }
+        
+        .approach-cards .card .card-image{
+            height: 50%;
+            position: relative;
+            overflow:hidden;
+            margin-left: 0.9375rem;
+            margin-right: 0.9375rem;
+            margin-top:1.875rem;
+            border-radius: 0.375rem;
+            box-shadow: 0 0.5625rem 1.875rem -0.625rem rgba(221, 218, 218, 0.5)
+                
+        }
+        
+        .approach-cards .card .content{
+            padding: 0.9375rem 1rem;
+            text-align: center;
+            
+        }
+        
+        .card-description{
+            color: #002266;
+            text-align: center;
+        }
+        
+        
+        
+        /*
+        ============================
+        contact scetion
+        ================================
+        */
+        .contact {
+            background: #eeebe4 ;
+        }
+        .contact .our-con-info li i{
+            color: #002266;
+            font-size: 2rem;       
+        }
+        .contact .our-con-info li p a{
+            color: #002266;
+            font-size: 1rem;   
+        }
+        .contact .form-control{
+            height: 3.75rem;
+            padding: 0.375rem 1.1875rem;
+            border:none;
+            font-size: 1.1875rem;  
+            box-shadow: 0 0.1875rem 1.25rem 0 rgba(0 0 0 / 12%);
+        }
+        .contact .textarea{
+            width:100%;
+            border-radius: 0.25rem;
+            padding: 0.75rem 1.1875rem;
+            border:none;
+            font-size: 1.1875rem; 
+            margin-top: 0.3125rem;
+            box-shadow: 0 0.1875rem 1.25rem 0 rgba(0 0 0 / 12%);
+        }
+        .contact .main-btn{
+            background: #0edbb2;
+             padding: 1rem;
+        }
+        
+        /*
+        ===========================
+        footer des
+        ==========================*/
+        .copyright{
+            background: #661933;
+        }
+        .copyright p{
+            color:#eeebe4;
+        }
+        .copyright a{
+            color:darkgoldenrod;
+        }
+        
+        
+            
+       @media (max-width: 1030px){
+    
+    
+
+    
+    /* about section*/
+    
+           .about .about-img::before{
+               height: 22.8125rem;
+           }  
+           .about  .right-wrapper{
+               padding-left: 1rem;
+           }
+           h2{
+               font-size: 2.9rem;
+           }
+           
+           
+           
+    /*our approach*/
+    
+    
+} 
+        
+        
+   
+        
+        
+        
+   
+@media(max-width: 991px){
+    
+ 
+   
+    
+    h1{
+        font-size: 2.8rem;
+    }
+    /*about section*/
+    
+     .about .about-img::before{
+               height: 30.5rem;
+           } 
+
+    
+  
+    .blog-img img{
+        height: 25rem;
+    }
+}
+
+     
+   
+        
+        
+        
+        
+        
+        
+        @media(max-width: 767px){
+            
+            /* custom css*/
+            
+            .mob-pb-0{
+                padding-bottom: 0px !important;
+            }
+            
+             .mob-pt-0{
+                padding-top: 0px !important;
+            }
+            
+           
+        
+        
+        
+        
+         
+          
+            
+            h1{
+                font-size: 2.5rem !important;
+            }
+            
+            h2{
+                font-size: 2rem !important;
+            }
+            
+            
+            /* about section*/
+            .about .about-img{
+                padding-left: 3rem;
+                padding-bottom: 3rem;
+            }
+            .about .about-img::before{
+                height: 15.5rem;
+            }
+            
+            
+            /* our approcah section*/
+            
+            
+            /*====blog====*/
+            .blog .slider-wrapper .left-wrapper{
+                text-align: center;
+            }
+            
+        }
+        
+        
+        
+        
+        
+        
+        
+      </style>  
+      <body>
+      
+    
+      <!----header start---->
+    <header class="header" id="intro">
+    <nav class="navbar">
+       <div class="container" >
+        <div class="brand-and-toggler">
+          <a href="index.html" class="navbar-brand">
+              <a class="navbar-brand" href="#"><span class="jiz">Cat<span class="huh">Cafe</span></span></a>
+            </a> 
+           <button type="button" class="navbar-toggler" id="navbar-toggler">
+            <i class="fa fa-bars"></i>
+            
+            </button>
+           </div>
+           
+           <div class="navbar-collapse">
+           <ul class="navbar-nav">
+               <li class="nav-item active"><a href="#intro" class="nav-link">Home</a></li>
+                <li class="nav-item"><a href="#about" class="nav-link">About</a></li>
+               <li class="nav-item"><a href="#gallery" class="nav-link">Gallery</a></li>
+                <li class="nav-item"><a href="#blog" class="nav-link">Blogs</a></li>
+               <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
+               </ul>
+               
+           </div>
+        </div>
+        
+        </nav>
+    
+        
+        
+        
+          <div class="banner-text">
+        <h1 class="animated bounceInLeft" style="animation-delay: 1s">Opxu Arts <span> & Aesthetics</span> </h1>
+                <p class="stext animated fadeInUp" style="animation-delay: 2s">Lorem Ipsum has been the industry's standard dummy text</p>
+           <div class="mt-3 boron">
+                       <a href="#contact" class="smooth-anchor main-bon animated bounceInLeft" style="animation-delay: 3s">Buy Artswork</a>
+                 <a href="#contact" class="smooth-anchor main-btn animated bounceInRight" style="animation-delay: 3s" >Read all Blogs</a>
+                       </div>
+              
+        </div>
+    </header>
+          
+               <div class="clearfix"></div>
+          
+          
+          
+    <!---SECTION 2 about design---->
+        <section id="about">
+        <div  class="wrapper about">
+            <div class="container">
+                <div class="row">
+                 <div class="col-lg-6 col-md-12 left-wrapper">
+                <div class="about-img position-relative" data-aos="zoom-in" data-aos-delay="800">
+                <img src="images/BG1.jpg" class="img-fluid">
+                </div>
+                </div>
+                <div class="col-lg-6 col-md-12 pt-md-5 right-wrapper">
+                <div  data-aos="fade-left" data-aos-delay="800">
+                    <h5>About OPXU ARTS </h5>
+                    <h2> AESTHETICS lovers and what they love</h2>
+                    <p>Multos qui a esse ingeniis. Multos ne ingeniis o veniam, tempor quo duis, ubi malis eu malis, et irure possumus. Ipsum se arbitror, malis e do cillum admodum. Do velit sum se arbitror, malis e do cillum admodum. Do velit</p>
+                    <p>Culpa arbitror o exercitation. Aliquip aut aute mentitum, labore nescius quo doctrina e quorum do proident ad quo duis ex dolore. Excepteur eu labore singulis. Nisi eu</p>
+                    </div>
+                    <div class="mt-5">
+                    <a href="#contact" class="mainbtt">Learn more</a>
+                    </div>
+                </div>
+                </div>
+            </div>
+            </div>
+        </section>
+      <div class="clearfix"></div>
+    
+
+
+          
+          
+          
+    
+         
+        <!----our projects section--->
+        <div class="projects_section" id="gallery">
+        <div class="container">
+            <center>
+            <h1 class="heading">Our Gallery<span>.</span></h1>
+                <p>Id nulla ullamco fidelissimae quo ita<br> Website by LarryAustin</p>
+            </center>
+            <div class="projects_cards my-5">
+            <div class="row justify-content-center">
+                <div class="col-lg-4 col-md-6 col-sm-12 col-12">
+                <div class=" card card-default border-0 animate_animated mb-3 " data-aos="zoom-in" data-aos-delay="800">
+                    <div class="card-header border-0 p-0">
+                    <img src="images/glas.jpg" width="100%">
+                    </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4 col-md-6 col-sm-12 col-12">
+                <div class=" card card-default border-0 animate_animated mb-3" data-aos="fade-down" data-aos-delay="800">
+                    <div class="card-header border-0 p-0">
+                    <img src="images/wasth.jpg" width="100%">
+                    </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4 col-md-6 col-sm-12 col-12">
+                <div class=" card card-default border-0 animate_animated mb-3" data-aos="zoom-in" data-aos-delay="800">
+                    <div class="card-header border-0 p-0">
+                    <img src="images/pexels-thgusstavo-santana-2102587.jpg" width="100%">
+                    </div>
+                    </div>
+                </div>
+                </div>
+            </div>
+            </div>
+        </div>
+        
+        
+         <!-- approach -section --->
+        
+        <section id="blog">
+        <div class="wrapper approach">
+            <div class="container">
+            <div class="heading text-center">
+              <h5>Blogs</h5> 
+                <h2>Read all Blogs</h2>
+                </div>
+                <div class="approach-cards">
+                <div class="container">
+                    <div class="row">
+                    <div class="col-md-6 col-lg-4">
+                        <div class="card" data-aos="zoom-in" data-aos-delay="800">
+                        <div class="card-image">
+                            <a href="#"><img src="images/lll.jpg" class="img-fluid"></a>
+                            </div>
+                            <div class="content">
+                            <h4>ut ita sempiternum, aut non nisi vd </h4>
+                                <p class="card-description">Aut ita sempiternum, aut non nisi varias summis. Aliquip labore legam de malis. Possumus esse summis litteris aute a voluptate ea ipsum, est</p>
+                            </div>
+                        </div>
+                        </div>
+                        
+                         <div class="col-md-6 col-lg-4">
+                        <div class="card" data-aos="fade-down" data-aos-delay="800">
+                        <div class="card-image">
+                            <a href="#"><img src="images/lima.jpg" class="img-fluid"></a>
+                            </div>
+                            <div class="content">
+                            <h4>et instituendarum in dolor fabul</h4>
+                                <p class="card-description">Sunts qui a esse ingeniis. Multos ne ingeniis o veniam, tempor quo duis, ubi malis incididunt et instituendarum in dolor fabulas graviterque. Aut si</p>
+                            </div>
+                        </div>
+                           </div>
+                        
+                         <div class="col-md-6 col-lg-4">
+                        <div class="card" data-aos="zoom-in" data-aos-delay="800">
+                        <div class="card-image">
+                            <a href="#"><img src="images/sky.jpg" class="img-fluid"></a>
+                            </div>
+                            <div class="content">
+                            <h4>ubi malis incididunt et instituen </h4>
+                                <p class="card-description">unt et is qui a esse ingeniis. Multos ne ingeniis o veniam, tempor quo duis, ubi malisnstituendarum in dolor fabulas graviterque. Aut si quorum quibusdam.</p>
+                            </div>
+                        </div>
+                           </div>
+                    </div>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </section>
+        
+        <div class="clearfix"></div>
+        
+             
+           <!-----section 5 contact-->
+        <section id="contact">
+        <div class="wrapper contact">
+        <div class="container">
+            <div class="heading text-center ">
+                <h5>Lets Start a Conversation</h5>
+                 <h2>Get In Touch</h2>
+            </div>
+        </div>
+        <div class="contact">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-5 col-md-5">
+                      <h4>Contact Info</h4> <br> 
+                      <ul class="our-con-info list-unstyled" data-aos="fade-down-right" data-aos-delay="900">
+                          <li class="d-flex align-items-center">
+                              <i class="pr-3 fa fa-map-marker"></i>
+                              <p><a href="">Loremae ex  unde dicta minima. Voluptate, nulla!</a></p>
+                          </li><br>
+                          <li class="d-flex align-items-center">
+                              <i class="pr-3 fa fa-phone"></i>
+                              <p><a href="">+234-913-3503679</a></p>
+                          </li><br>
+                          <li class="d-flex align-items-center">
+                            <i class="pr-3 fa fa-envelope-o"></i>
+                            <p><a href="">@catcafe.com</a></p>
+                        </li><br>
+                      </ul>
+                    </div>
+                    <div class="col-lg-7 col-md-7 pt-lg-0 pt-md-0 pt-4" data-aos="flip-right" data-aos-delay="900">
+                     <form>
+                         <div class="row">
+                             <div class="col-md-6">
+                                 <div class="form-group">
+                                     <input type="text" class="form-control" name="name" id="name" placeholder="Your name" required>
+                                 </div>
+                             </div>
+                             <div class="col-md-6">
+                                <div class="form-group">
+                                    <input type="email" class="form-control" name="email" id="email" placeholder="Email Address" required>
+                                </div>
+                            </div>
+                            <div class="col-md-12">
+                                <div class="form-group">
+                                   <textarea class="textarea" name="message" cols="30" rows="4" id="message" placeholder="Enter your Message"  required></textarea>
+                                </div>
+                            </div>
+                            <div class="col-md-12">
+                               <a href=""> <button class="mainbtt"><i class="fa fa-paper-plane pr-3"></i>Send Message</button></a>
+                            </div>
+                         </div>
+                     </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+        </section>
+        <div class="clearfix"></div>
+        
+        
+        <!----section 6 footer-->
+        <footer>
+            <section>
+            <div  class="p-3 copyright" id="copyright">
+               <div class="container" >
+                 <div class="row align-items-center">
+                    <div class="col-12 col-md-6 p-3 text-center text-lg-left mob-pb-0" >
+                        <p classs="my-0">copyright &copy; 2021 <a href="#">Catcafe</a> | All Rights Resreved</p>
+                    </div>
+                    <div class="col-12 col-md-6 p-3 text-center text-lg-right" mob-pt-0>
+                        <p>Designed by<a href="" target=" _blank"> LarryAustin</a> </p>
+                    </div>
+                 </div>  
+               </div>
+            </div>
+            </section>
+        </footer>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+    
+       <!-----jquery--->
+    <script src="jquery-3.5.1.js"></script>
+    
+    <!---custom js--->
+    <script src="man.js"></script>
+    
+    <!----magnific js--->
+    <script src="jquery.magnific-popup.js"></script>
+    
+    
+    <!---owl carousel --->
+          <script src="owl.carousel.js"></script>
+           <script src="aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+    </body>
